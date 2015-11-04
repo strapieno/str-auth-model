@@ -1,1 +1,1 @@
-# Strapieno auth api
+# Strapieno auth model
