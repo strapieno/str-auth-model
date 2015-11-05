@@ -34,7 +34,7 @@ return [
             'type' => 'Strapieno\Auth\Model\ClientModelService',
             'object' => 'Client',
             'resultset' => 'Strapieno\Model\ResultSet\HydratingResultSet',
-            'paginator_criteria' => 'Strapieno\User\Model\Criteria\ClientCollectionCriteria',
+            'paginator_criteria' => 'Strapieno\Auth\Model\Criteria\ClientCollectionCriteria',
             'hydrator' => 'Strapieno\Auth\Model\Hydrator\ClientModelHydrator',
             'listeners' => [
                 'Strapieno\ModelUtils\Listener\DateAwareListener',

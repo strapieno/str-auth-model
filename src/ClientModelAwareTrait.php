@@ -5,7 +5,7 @@ namespace Strapieno\Auth\Model;
 /**
  * Interface ClientInterface
  */
-interface ClientModelAwareInterface
+trait ClientModelAwareTrait
 {
     /**
      * @var ClientModelInterface
