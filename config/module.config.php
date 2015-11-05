@@ -28,6 +28,7 @@ return [
     'matryoshka-models' => [
         'Strapieno\Auth\Model\ClientModelService' => [
             'datagateway' => 'DataGateway\Mongo\Client',
+            'type' => 'Strapieno\Auth\Model\ClientModelService'
             'object' => 'Client',
             'resultset' => 'Strapieno\Model\ResultSet\HydratingResultSet',
             'paginator_criteria' => 'Strapieno\User\Model\Criteria\ClientCollectionCriteria',
