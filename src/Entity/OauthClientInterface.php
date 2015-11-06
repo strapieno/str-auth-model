@@ -8,9 +8,11 @@ use Zend\Permissions\Acl\Role\RoleInterface;
 use Zend\Stdlib\Hydrator\HydratorAwareInterface;
 
 /**
- * Class ClientInterface
+ * Interface OauthClientInterface
+ *
+ * @package Strapieno\Auth\Model\Entity
  */
-interface ClientInterface extends
+interface OauthClientInterface extends
     EntityInterface,
     DateHistoryAwareInterface,
     HydratorAwareInterface,

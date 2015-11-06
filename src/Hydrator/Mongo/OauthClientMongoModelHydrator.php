@@ -5,9 +5,9 @@ namespace Strapieno\Auth\Model\Hydrator\Mongo;
 use Strapieno\ModelUtils\Hydrator\Mongo\DateHistoryHydrator;
 
 /**
- * Class ClientMongoModelHydrator
+ * Class OauthClientMongoModelHydrator
  */
-class ClientMongoModelHydrator extends DateHistoryHydrator
+class OauthClientMongoModelHydrator extends DateHistoryHydrator
 {
 
 }

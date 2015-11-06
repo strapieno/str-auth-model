@@ -6,11 +6,11 @@ use Strapieno\ModelUtils\Entity\DateHistoryAwareTrait;
 use Strapieno\ModelUtils\Entity\RoleAwareTrait;
 
 /**
- * Class ClientEntity
+ * Class OauthClientEntity
  */
-class ClientEntity extends AbstractActiveRecord implements ClientInterface
+class OauthClientEntity extends AbstractActiveRecord implements OauthClientInterface
 {
-    use ClientTrait;
+    use OauthClientTrait;
     use DateHistoryAwareTrait;
     use RoleAwareTrait;
 }

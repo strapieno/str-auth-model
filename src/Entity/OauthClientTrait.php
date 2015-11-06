@@ -3,9 +3,9 @@
 namespace Strapieno\Auth\Model\Entity;
 
 /**
- * Class ClientTrait
+ * Class OauthClientTrait
  */
-trait ClientTrait
+trait OauthClientTrait
 {
     /**
      * @var string

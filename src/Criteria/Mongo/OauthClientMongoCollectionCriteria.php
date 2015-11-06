@@ -4,9 +4,9 @@ namespace Strapieno\Auth\Model\Criteria\Mongo;
 use Matryoshka\Model\Wrapper\Mongo\Criteria\FindAllCriteria;
 
 /**
- * Class ClientMongoCollectionCriteria
+ * Class OauthClientMongoCollectionCriteria
  */
-class ClientMongoCollectionCriteria extends FindAllCriteria
+class OauthClientMongoCollectionCriteria extends FindAllCriteria
 {
 
 }
