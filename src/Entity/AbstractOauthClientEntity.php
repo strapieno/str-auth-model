@@ -16,6 +16,5 @@ abstract class AbstractOauthClientEntity extends AbstractActiveRecord implements
     use OauthClientTrait;
     use DateHistoryAwareTrait;
     use RoleAwareTrait;
-    use UserIdAwareTrait;
     use TypeAwareTrait;
 }
