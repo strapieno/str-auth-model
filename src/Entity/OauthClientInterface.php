@@ -5,6 +5,7 @@ namespace Strapieno\Auth\Model\Entity;
 use Strapieno\ModelUtils\Entity\DateHistoryAwareInterface;
 use Strapieno\ModelUtils\Entity\EntityInterface;
 use Strapieno\ModelUtils\Entity\TypeAwareInterface;
+use Strapieno\User\Model\Entity\UserIdAwareInterface;
 use Zend\Permissions\Acl\Role\RoleInterface;
 use Zend\Stdlib\Hydrator\HydratorAwareInterface;
 
@@ -18,7 +19,8 @@ interface OauthClientInterface extends
     DateHistoryAwareInterface,
     HydratorAwareInterface,
     RoleInterface,
-    TypeAwareInterface
+    TypeAwareInterface,
+    UserIdAwareInterface
 {
 
 }

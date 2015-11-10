@@ -11,5 +11,4 @@ use Strapieno\User\Model\Entity\UserIdAwareTrait;
  */
 class OauthUserClientEntity extends AbstractOauthClientEntity implements OauthUserClientInterface
 {
-    use UserIdAwareTrait;
 }

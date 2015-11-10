@@ -13,7 +13,7 @@ use Zend\Stdlib\Hydrator\HydratorAwareInterface;
  *
  * @package Strapieno\Auth\Model\Entity
  */
-interface OauthUserClientInterface extends OauthClientInterface, UserIdAwareInterface
+interface OauthUserClientInterface extends OauthClientInterface
 {
 
 }
