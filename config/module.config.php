@@ -25,7 +25,7 @@ return [
     'matryoshka-objects' => [
         'OauthClient' => [
             'type' => 'Strapieno\Auth\Model\Entity\OauthClientEntity',
-            'active_record_criteria' => 'Strapieno\User\Model\Criteria\NotIsolatedActiveRecordCriteria'
+            'active_record_criteria' => 'Strapieno\Model\Criteria\NotIsolatedActiveRecordCriteria'
         ],
     ],
     'matryoshka-models' => [
