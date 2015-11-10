@@ -27,6 +27,10 @@ return [
             'type' => 'Strapieno\Auth\Model\Entity\OauthClientEntity',
             'active_record_criteria' => 'Strapieno\Model\Criteria\NotIsolatedActiveRecordCriteria'
         ],
+        'OauthUserClient' => [
+            'type' => 'Strapieno\Auth\Model\Entity\OauthUserClientEntity',
+            'active_record_criteria' => 'Strapieno\Model\Criteria\NotIsolatedActiveRecordCriteria'
+        ],
     ],
     'matryoshka-models' => [
         'Strapieno\Auth\Model\OauthClientModelService' => [
@@ -35,6 +39,7 @@ return [
             'object' => 'OauthClient',
             'resultset' => 'Strapieno\Model\ResultSet\HydratingResultSet',
             'paginator_criteria' => 'Strapieno\Auth\Model\Criteria\OauthClientCollectionCriteria',
+            'prototype_strategy' => 'Matryoshka\Model\Object\PrototypeStrategy\ServiceLocatorStrategy',
             'hydrator' => 'Strapieno\Auth\Model\Hydrator\OauthClientModelHydrator',
             'listeners' => [
                 'Strapieno\ModelUtils\Listener\DateAwareListener',
