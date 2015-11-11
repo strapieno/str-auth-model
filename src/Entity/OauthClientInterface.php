@@ -22,5 +22,5 @@ interface OauthClientInterface extends
     TypeAwareInterface,
     UserIdAwareInterface
 {
-
+    const PASSWORD_BCRYPT_COST = 10;
 }

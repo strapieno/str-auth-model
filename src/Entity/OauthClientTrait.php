@@ -2,6 +2,8 @@
 
 namespace Strapieno\Auth\Model\Entity;
 
+use Zend\Crypt\Password\Bcrypt;
+
 /**
  * Class OauthClientTrait
  */
@@ -11,6 +13,11 @@ trait OauthClientTrait
      * @var string
      */
     protected $clientId;
+
+    /**
+     * @var string
+     */
+    protected $password;
 
     /**
      * @var string
@@ -38,6 +45,27 @@ trait OauthClientTrait
     public function getClientId()
     {
         return $this->clientId;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     * @return $this
+     */
+    public function setPassword($password)
+    {
+        if (!empty($password)) {
+            $this->setClientSecret((new Bcrypt)->setCost(OauthClientInterface::PASSWORD_BCRYPT_COST));
+            $this->password = $password;
+        }
+        return $this;
     }
 
     /**
