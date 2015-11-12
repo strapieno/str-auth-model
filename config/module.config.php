@@ -1,6 +1,15 @@
 <?php
 
 return [
+    'OauthClientTypes' => [
+        'OauthClient',
+        'OauthUserClient'
+    ],
+    'strapieno-array-validators' => [
+        'OauthClientTypesValidator' => [
+            'name_key_array_config' => 'OauthClientTypes'
+        ]
+    ],
     // Register aclman services
     'service_manager' => [
         'factories' => [
