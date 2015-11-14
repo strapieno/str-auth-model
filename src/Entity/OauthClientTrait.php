@@ -62,7 +62,8 @@ trait OauthClientTrait
     public function setPassword($password)
     {
         if (!empty($password)) {
-            $this->setClientSecret((new Bcrypt)->setCost(OauthClientInterface::PASSWORD_BCRYPT_COST));
+            $bCrypt = (new Bcrypt)->setCost(OauthClientInterface::PASSWORD_BCRYPT_COST);
+            $this->setClientSecret($bCrypt->create($password));
             $this->password = $password;
         }
         return $this;
