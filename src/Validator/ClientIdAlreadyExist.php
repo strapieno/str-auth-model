@@ -3,6 +3,7 @@
 namespace Strapieno\Auth\Model\Validator;
 
 use Matryoshka\Model\ResultSet\ResultSetInterface;
+use Strapieno\Auth\Model\Criteria\Mongo\OauthClientMongoCollectionCriteria;
 use Strapieno\Auth\Model\OauthClientModelAwareInterface;
 use Strapieno\Auth\Model\OauthClientModelAwareTrait;
 use Zend\Validator\AbstractValidator;
