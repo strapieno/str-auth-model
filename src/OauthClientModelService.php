@@ -24,7 +24,7 @@ class OauthClientModelService extends ObservableModel implements OauthClientMode
             /** @var $resultSet ResultSetInterface */
             $resultSet = $this->find($criteria);
             if ($resultSet->count() == 1) {
-                return $resultSet->current();
+                return $resultSet;
             }
             throw new \RuntimeException(sprintf('Ambiguous client id %s', $dataClient['client_id']));
         }
