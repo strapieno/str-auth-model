@@ -3,13 +3,14 @@
 namespace Strapieno\Auth\Model\OAuth2\Adapter;
 
 use MongoDate;
+use Strapieno\Auth\Model\OAuth2\AdapterInterface;
 use ZF\ApiProblem\Exception\DomainException;
 use ZF\OAuth2\Adapter\MongoAdapter as ZfCampusMongoAdapter;
 
 /**
  * Class MongoAdapter
  */
-class MongoAdapter extends ZfCampusMongoAdapter
+class MongoAdapter extends ZfCampusMongoAdapter implements AdapterInterface
 {
     /**
      * @var string
