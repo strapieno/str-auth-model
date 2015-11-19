@@ -10,8 +10,5 @@ interface AdapterInterface
     /**
      * @return string
      */
-    public function getIdentityField()
-    {
-        return $this->identityField;
-    }
+    public function getIdentityField();
 }

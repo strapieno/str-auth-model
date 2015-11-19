@@ -44,6 +44,14 @@ class Module implements HydratorProviderInterface, ValidatorProviderInterface, I
     /**
      * {@inheritdoc}
      */
+    public function getValidatorConfig()
+    {
+        return include __DIR__ . '/config/validator.config.php';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getAutoloaderConfig()
     {
         return [
