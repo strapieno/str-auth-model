@@ -3,7 +3,7 @@
 namespace Strapieno\Auth\Model\Hydrator\Mongo;
 
 use Matryoshka\Model\Wrapper\Mongo\Hydrator\Strategy\MongoIdStrategy;
-use Strapieno\ModelUtils\Hydrator\Mongo\DateHistoryHydrator;
+use Strapieno\Utils\Hydrator\Mongo\DateHistoryHydrator;
 use Zend\Stdlib\Hydrator\Filter\FilterComposite;
 use Zend\Stdlib\Hydrator\Filter\MethodMatchFilter;
 

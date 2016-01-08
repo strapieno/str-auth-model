@@ -2,7 +2,7 @@
 
 namespace Strapieno\Auth\Model;
 
-use Strapieno\ModelUtils\Inizilizer\AbstractModelServiceInizilizer;
+use Strapieno\Utils\Inizilizer\AbstractModelServiceInizilizer;
 
 /**
  * Class OauthCLientModelInizializer
