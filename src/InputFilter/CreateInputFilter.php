@@ -9,7 +9,6 @@ use Zend\InputFilter\Input;
  */
 class CreateInputFilter extends DefaultInputFilter
 {
-{
     public function init()
     {
         parent::init();
@@ -27,5 +26,4 @@ class CreateInputFilter extends DefaultInputFilter
         $input->getValidatorChain()->attach($validatorManager->get('oauthclient-clientidalreadyexist'));
         return $this;
     }
-}
 }
