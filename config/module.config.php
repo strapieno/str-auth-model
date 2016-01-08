@@ -51,7 +51,7 @@ return [
             'prototype_strategy' => 'Matryoshka\Model\Object\PrototypeStrategy\ServiceLocatorStrategy',
             'hydrator' => 'Strapieno\Auth\Model\Hydrator\OauthClientModelHydrator',
             'listeners' => [
-                'Strapieno\Utils\Listener\DateAwareListener',
+                'Strapieno\Utils\Model\Listener\DateAwareListener',
             ],
         ],
     ],
