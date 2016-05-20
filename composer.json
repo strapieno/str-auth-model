@@ -7,7 +7,6 @@
     "matryoshka-model/matryoshka": "0.8.*@dev",
     "matryoshka-model/mongo-wrapper": "0.8.*@dev",
     "matryoshka-model/zf2-matryoshka-module": "0.8.*@dev",
-    "strapieno/str-utils" : "dev-develop",
     "strapieno/str-user-model" : "dev-develop"
   },
   "require-dev": {
@@ -24,21 +23,12 @@
       "./Module.php"
     ]
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:strapieno/str-utils.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:strapieno/str-user-model.git"
-    }
-  ],
   "authors": [
     {
       "name": "Antonio Visalli",
       "email": "antonino.visalli@gmail.com",
       "homepage": "http://github.com/visa4"
     }
-  ]
+  ],
+  "minimum-stability": "dev"
 }
