@@ -1,16 +1,6 @@
 <?php
 
 return [
-    'OauthClientTypes' => [
-        'OauthClient',
-        'OauthUserClient'
-    ],
-    'strapieno-array-validators' => [
-        'OauthClientTypesValidator' => [
-            'name_key_array_config' => 'OauthClientTypes'
-        ]
-    ],
-    // Register aclman services
     'service_manager' => [
         'factories' => [
             'Strapieno\Auth\Model\OAuth2\StorageAdapter'
@@ -23,6 +13,15 @@ return [
         'aliases' => [
             'Strapieno\Auth\Model\Criteria\OauthClientCollectionCriteria'
                 => 'Strapieno\Auth\Model\Criteria\Mongo\OauthClientMongoCollectionCriteria'
+        ]
+    ],
+    'input_filters' => [
+        'abstract_factories' => [
+            'Strapieno\Utils\InputFilter\InputFilterAbstractServiceFactory',
+        ],
+        'invokables' => [
+            'Zend\InputFilter\InputFilter' => 'Zend\InputFilter\InputFilter',
+            'Zend\InputFilter\Input' => 'Zend\InputFilter\Input'
         ]
     ],
     'mongocollection' => [
@@ -55,5 +54,54 @@ return [
             ],
         ],
     ],
+    'OauthClientTypes' => [
+        'OauthClient',
+        'OauthUserClient'
+    ],
+    'strapieno-array-validators' => [
+        'OauthClientTypesValidator' => [
+            'name_key_array_config' => 'OauthClientTypes'
+        ]
+    ],
+    'strapieno_input_filter_specs' => [
+        'Strapieno\Auth\Model\InputFilter\DefaultInputFilter' => [
+            'client_id' => [
+                'name' => 'client_id',
+                'require' => false,
+                'allow_empty' => true,
+                'filters' => [
+                    'stringtrim' => [
+                        'name' => 'stringtrim',
+                    ]
+                ]
+            ],
+            'type' => [
+                'name' => 'type',
+                'require' => false,
+                'allow_empty' => true,
+                'filters' => [
+                    'stringtrim' =>  [
+                        'name' => 'stringtrim',
+                    ]
+                ],
+                'validators' => [
+                    'OauthClientTypesValidator' => [
+                        'name' => 'OauthClientTypesValidator',
+                        'break_chain_on_failure' => true
+                    ]
+                ]
+            ],
+            'password' => [
+                'name' => 'password',
+                'require' => false,
+                'allow_empty' => true,
+                'filters' => [
+                    'stringtrim' => [
+                        'name' => 'stringtrim',
+                    ]
+                ],
+            ]
+        ]
+    ]
 ];
 

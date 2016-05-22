@@ -4,7 +4,6 @@ namespace Strapieno\Auth\Model;
 
 use Strapieno\Auth\Api\Authentication\AuthenticationListenerAggregate;
 use Zend\ModuleManager\Feature\HydratorProviderInterface;
-use Zend\ModuleManager\Feature\InputFilterProviderInterface;
 use Zend\ModuleManager\Feature\ValidatorProviderInterface;
 use Zend\Mvc\MvcEvent;
 use Zend\Stdlib\ArrayUtils;
@@ -14,7 +13,7 @@ use Zend\Validator\ValidatorPluginManagerAwareInterface;
 /**
  * Class Module
  */
-class Module implements HydratorProviderInterface, ValidatorProviderInterface, InputFilterProviderInterface
+class Module implements HydratorProviderInterface, ValidatorProviderInterface
 {
 
     /**
@@ -31,14 +30,6 @@ class Module implements HydratorProviderInterface, ValidatorProviderInterface, I
     public function getHydratorConfig()
     {
         return include __DIR__ . '/config/hydrator.config.php';
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getInputFilterConfig()
-    {
-        return include __DIR__ . '/config/input-filter.config.php';
     }
 
     /**
