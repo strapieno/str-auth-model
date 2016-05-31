@@ -15,6 +15,26 @@ return [
                 => 'Strapieno\Auth\Model\Criteria\Mongo\OauthClientMongoCollectionCriteria'
         ]
     ],
+    'controllers' => [
+        'invokables' => [
+            'Strapieno\Auth\Model\Controller\CrudController' => 'Strapieno\Auth\Model\Controller\CrudController'
+        ]
+    ],
+    'console' => [
+        'router' => [
+            'routes' => [
+                'add-client' => [
+                    'options' => [
+                        'route'    => 'add-client [--verbose|-v]',
+                        'defaults' => [
+                            'controller' => 'Strapieno\Auth\Model\Controller\CrudController',
+                            'action'     => 'add'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
     'input_filters' => [
         'abstract_factories' => [
             'Strapieno\Utils\InputFilter\InputFilterAbstractServiceFactory',
