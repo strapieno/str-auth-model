@@ -30,5 +30,8 @@
       "homepage": "http://github.com/visa4"
     }
   ],
+  "bin": [
+    "bin/str-auth-model.php"
+  ],
   "minimum-stability": "dev"
 }

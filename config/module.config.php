@@ -18,7 +18,10 @@ return [
     'controllers' => [
         'invokables' => [
             'Strapieno\Auth\Model\Controller\CrudController' => 'Strapieno\Auth\Model\Controller\CrudController'
-        ]
+        ],
+        'initializers' => [
+            'Strapieno\Auth\Model\OauthClientModelInizializer'
+        ],
     ],
     'console' => [
         'router' => [

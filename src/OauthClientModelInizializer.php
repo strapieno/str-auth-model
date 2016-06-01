@@ -5,9 +5,9 @@ namespace Strapieno\Auth\Model;
 use Strapieno\Utils\Inizilizer\AbstractModelServiceInizilizer;
 
 /**
- * Class OauthCLientModelInizializer
+ * Class OauthClientModelInizializer
  */
-class OauthCLientModelInizializer extends AbstractModelServiceInizilizer
+class OauthClientModelInizializer extends AbstractModelServiceInizilizer
 {
     const SERVICE_NAME = OauthClientModelService::class;
     const INSTANCE_CLASS = OauthClientModelAwareInterface::class;

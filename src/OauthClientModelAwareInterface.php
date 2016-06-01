@@ -13,8 +13,8 @@ interface OauthClientModelAwareInterface
     public function getOauthClientModelService();
 
     /**
-     * @param OauthClientModelInterface $clientModelService
-     * @return $this
+     * @param OauthClientModelInterface $oauthClientModelService
+     * @return mixed
      */
     public function setOauthClientModelService(OauthClientModelInterface $oauthClientModelService);
 }
