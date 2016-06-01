@@ -28,7 +28,7 @@ return [
             'routes' => [
                 'add-client' => [
                     'options' => [
-                        'route'    => 'add-client [--verbose|-v]',
+                        'route'    => 'add-client --clientId= (OauthClient|OauthUserClient):type [--verbose|-v]',
                         'defaults' => [
                             'controller' => 'Strapieno\Auth\Model\Controller\CrudController',
                             'action'     => 'add'
