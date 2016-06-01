@@ -65,5 +65,4 @@ class OauthUserClientEntityTest extends \PHPUnit_Framework_TestCase
         $this->entity->setGrantTypes($input);
         $this->assertSame($input, $this->entity->getGrantTypes());
     }
-
 }
