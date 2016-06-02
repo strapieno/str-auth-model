@@ -4,6 +4,7 @@ namespace Strapieno\Auth\ModelTest;
 use Matryoshka\Model\Object\ActiveRecord\AbstractActiveRecord;
 use Strapieno\Auth\Model\Entity\OauthUserClientEntity;
 use Strapieno\Auth\Model\OauthClientModelAwareTrait;
+use Strapieno\Auth\Model\OauthClientModelInitializer;
 use Strapieno\Utils\Model\Entity\DateHistoryAwareTrait;
 use Strapieno\Utils\Model\Entity\RoleAwareTrait;
 use Strapieno\User\Model\Entity\UserIdAwareTrait;
@@ -21,6 +22,7 @@ class OauthClientModelAwareTraitTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $this->trait = $this->getMockForTrait('Strapieno\Auth\Model\OauthClientModelAwareTrait');
+        var_dump(new OauthClientModelInitializer());
     }
 
     public function testGetSetOauthClientModelService()

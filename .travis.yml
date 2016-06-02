@@ -19,7 +19,7 @@ branches:
 
 install:
   - composer self-update && composer --version
-  - composer update --ignore-platform-reqs --prefer-source
+  - composer update --ignore-platform-reqs --prefer-source -o
 
 before_script:
  - mkdir -p build/coverage
