@@ -1,5 +1,4 @@
 <?php
-
 namespace Strapieno\Auth\Model;
 
 /**
