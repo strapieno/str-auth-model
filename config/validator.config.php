@@ -1,7 +1,7 @@
 <?php
 return [
     'initializers' => [
-        'Strapieno\Auth\Model\OauthCLientModelInizializer'
+        'Strapieno\Auth\Model\OauthClientModelInitializer'
     ],
     'invokables' => [
         'Strapieno\Auth\Model\Validator\ClientIdAlreadyExist' => 'Strapieno\Auth\Model\Validator\ClientIdAlreadyExist'

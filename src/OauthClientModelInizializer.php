@@ -1,13 +1,12 @@
 <?php
-
 namespace Strapieno\Auth\Model;
 
-use Strapieno\Utils\Inizilizer\AbstractModelServiceInizilizer;
+use Strapieno\Utils\Initializer\AbstractModelServiceInitializer;
 
 /**
- * Class OauthClientModelInizializer
+ * Class OauthClientModelInitializer
  */
-class OauthClientModelInizializer extends AbstractModelServiceInizilizer
+class OauthClientModelInitializer extends AbstractModelServiceInitializer
 {
     const SERVICE_NAME = OauthClientModelService::class;
     const INSTANCE_CLASS = OauthClientModelAwareInterface::class;
