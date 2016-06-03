@@ -60,7 +60,7 @@ class Module implements HydratorProviderInterface, ValidatorProviderInterface, C
     {
         return [
             // Describe available commands
-            'add-client --clientId=<clientId> <type> [--verbose|-v]' => 'Add oauth client',
+            'add-client --clientId=<clientId> <type> [--verbose|-v]' => 'Add oauth client entity',
             // Describe expected parameters
             [ '--clientId', 'Name of the client id'],
             [ 'type', 'The type of the oauth client, must be OauthClient or OauthUserClient'],
